@@ -5,7 +5,7 @@ let package = Package(
     name: "Reusable",
     platforms: [.iOS(.v8), .tvOS(.v9)],
     products: [
-        .library(name: "Reusable", targets: ["Reusable"])
+        .library(name: "Reusable", type: .dynamic, targets: ["Reusable"])
     ],
     targets: [
       .target(
